@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS PRACTICE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+  <fieldset> <h1 >Registration form</h1>
+    
+  <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()"  >  
+ 
+    username: <input type="text" name="name"><br/>
+    Password: <input type="password" name="password"><br/>  
+    Confirm Password: <input type="password" name="password"><br/>
+    <input class="ff" style=" background-color:rgb(0, 157, 255) ;
+    color: white;
+    padding:5px 10px;
+    margin: 6px 2px;
+    cursor: pointer;
+    border: none;
+    width: 100%; 
+    opacity: 0.9;" type="submit" id="register" value="Register" >  
+    </form> 
+</fieldset>
+<script>
+ function validateform(){  
+var username=document.myform.username.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("username can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+} 
+
+</script>
+</body>
+</html>
